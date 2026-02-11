@@ -1,69 +1,60 @@
-# React + TypeScript + Vite
+# 📸 Instagram Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![GitHub license](https://img.shields.io/github/license/iwanehu/instagramclone)
+![GitHub stars](https://img.shields.io/github/stars/iwanehu/instagramclone)
+![GitHub forks](https://img.shields.io/github/forks/iwanehu/instagramclone)
 
-Currently, two official plugins are available:
+A fully functional Instagram replica designed to demonstrate skills in Full-Stack development, state management, and modern UI/UX design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Authentication:** Secure user registration and login (JWT / Firebase Auth).
+- **Real-time Feed:** View, upload, and interact with photo/video posts instantly.
+- **Social Interactions:** Like system, nested comments, and user tagging.
+- **User Profiles:** Personalized profiles showing posts, follower counts, and bio.
+- **Search Engine:** Discover new users and content through an optimized search bar.
+- **Fully Responsive:** Seamless experience across Mobile, Tablet, and Desktop.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Built with a modern stack for performance and scalability:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+* **Frontend:** [React.js / Next.js] & Tailwind CSS.
+* **Backend:** [Node.js / Express] or Firebase Services.
+* **Database:** [MongoDB / PostgreSQL] or Firestore.
+* **State Management:** [Redux Toolkit / Context API].
+* **Styling:** Styled Components or Tailwind.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Installation & Setup
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Follow these steps to get a local copy up and running on your machine (Arch Linux preferred):
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/iwanehu/instagramclone.git](https://github.com/iwanehu/instagramclone.git)
+    cd instagramclone
+    ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Environment Variables:**
+    Create a `.env` file in the root directory and add your credentials:
+    ```env
+    DATABASE_URL=your_database_url
+    API_KEY=your_api_key
+    ```
+
+4.  **Run the application:**
+    ```bash
+    npm run dev
+    ```
+
+## 📸 Screenshots
+
+| Home Feed | User Profile | Post View |
+| :
