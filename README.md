@@ -20,8 +20,6 @@ A fully functional Instagram replica designed to demonstrate skills in Full-Stac
 Built with a modern stack for performance and scalability:
 
 * **Frontend:** [React.js / Next.js] & Tailwind CSS.
-* **Backend:** [Node.js / Express] or Firebase Services.
-* **Database:** [MongoDB / PostgreSQL] or Firestore.
 * **State Management:** [Redux Toolkit / Context API].
 * **Styling:** Styled Components or Tailwind.
 
